@@ -10,6 +10,9 @@ body {
   border: 1px dashed black;
   margin-bottom: 10px;
 }
+form {
+  padding-bottom: 10px;
+}
 table {
   margin-top: calc(-141px + 66px); /* Remove the top border spacing and move the letters down 66 pixels */
   margin-left: -6px;
