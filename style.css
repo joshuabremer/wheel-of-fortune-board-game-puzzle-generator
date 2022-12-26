@@ -1,20 +1,22 @@
 @media print {
   @page {
-    size: landscape;
+    size: letter landscape;
   }
 }
 
 body {
   font-family: Helvetica;
   font-weight: bold;
-  width: 11in;
-  height: 8.5in;
+  width: 10in;
+  height: 8in;
   border: 1px solid black;
 }
 .cut-out-box {
   width: 9.625in;
   height: 7.25in;
   border: 1px dashed black;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 table {
   margin-top: calc(-141px + 66px); /* Remove the top border spacing and move the letters down 66 pixels */
@@ -42,6 +44,7 @@ tr.row--letters td.unused {
 
 .letter-guide__letter {
   border: 1px solid black;
-  font-size: 12px;
+  font-size: 10px;
   padding: 5px 20px;
+  display: inline-block;
 }
