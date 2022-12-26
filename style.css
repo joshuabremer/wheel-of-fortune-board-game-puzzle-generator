@@ -14,10 +14,9 @@ form {
   padding-bottom: 10px;
 }
 table {
-  margin-top: -1.575in; /* Remove the top border spacing and move the letters down 66 pixels */
+  margin-top: -1.235in; /* Remove the top border spacing and move the letters down 66 pixels */
   margin-left: -6px;
-  /* margin-top: 50px; */
-  border-spacing: 48px 1.575in;
+  border-spacing: 49px 1.405in;
   border-collapse: separate;
   table-layout: fixed;
 }
@@ -25,12 +24,13 @@ tr.row-letters {
   padding-bottom: 100px;
 }
 tr.row--letters td {
-  font-size: 47px;
-  height: 50px;
-  border-bottom: 5px solid black;
+  font-size: 49px;
+  height: 56px;
+  border-bottom: 6px solid black;
   margin-bottom: 100px;
   text-align: center;
   width: 10%;
+  vertical-align: top;
 }
 
 tr.row--letters td.unused {
@@ -47,7 +47,6 @@ tr.row--letters td.unused {
 
 @media print {
   @page {
-    margin: 0cm !important;
     size: letter landscape;
   }
   form {
