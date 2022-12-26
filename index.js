@@ -1,6 +1,7 @@
 const inputElement = document.querySelector("input[name=puzzle-input]");
 const rows = document.querySelectorAll("tr.row--letters");
 const cells = document.querySelectorAll("td");
+const letterGuideElement = document.querySelector(".letter-guide");
 
 inputElement.addEventListener("keyup", (event) => {
   showInputValue();
@@ -8,6 +9,7 @@ inputElement.addEventListener("keyup", (event) => {
 
 function showInputValue() {
   const input = inputElement.value.toUpperCase();
+  const letterGuide = {};
   cells.forEach((cell) => {
     cell.classList.add("unused");
     cell.innerHTML = randomLetter();
@@ -23,9 +25,17 @@ function showInputValue() {
       if (inputLetter !== " ") {
         cell.innerHTML = inputLetter;
         cell.classList.remove("unused");
+        letterGuide[inputLetter] = letterGuide[inputLetter] || [];
+        letterGuide[inputLetter].push(iterator);
       }
       iterator++;
     }
+  });
+  const keys = Object.keys(letterGuide).sort();
+  keys.forEach(function (key) {
+    letterGuideElement.innerHTML += `<span class="letter-guide__letter">${key}: ${letterGuide[
+      key
+    ].join(",")}</span>`;
   });
 }
 

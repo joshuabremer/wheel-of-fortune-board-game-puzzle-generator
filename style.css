@@ -5,9 +5,11 @@
 }
 
 body {
-  font-size: 40px;
   font-family: Helvetica;
   font-weight: bold;
+  width: 11in;
+  height: 8.5in;
+  border: 1px solid black;
 }
 .cut-out-box {
   width: 9.625in;
@@ -15,25 +17,31 @@ body {
   border: 1px dashed black;
 }
 table {
-  margin-top: -57px;
+  margin-top: calc(-141px + 66px); /* Remove the top border spacing and move the letters down 66 pixels */
   margin-left: -6px;
   /* margin-top: 50px; */
-  border-spacing: 46px 116px;
+  border-spacing: 48px 141px;
   border-collapse: separate;
-
-  transform: scale(1.13);
-  transform-origin: top left;
+  table-layout: fixed;
 }
 tr.row-letters {
   padding-bottom: 100px;
 }
 tr.row--letters td {
+  font-size: 47px;
   height: 50px;
   border-bottom: 5px solid black;
   margin-bottom: 100px;
   text-align: center;
+  width: 10%;
 }
 
 tr.row--letters td.unused {
   border-bottom: 0;
+}
+
+.letter-guide__letter {
+  border: 1px solid black;
+  font-size: 12px;
+  padding: 5px 20px;
 }
