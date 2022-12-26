@@ -6,7 +6,7 @@ body {
 }
 .cut-out-box {
   width: 9.625in;
-  height: 7.25in;
+  height: 6.75in;
   border: 1px dashed black;
   margin-bottom: 10px;
 }
@@ -14,10 +14,10 @@ form {
   padding-bottom: 10px;
 }
 table {
-  margin-top: calc(-141px + 66px); /* Remove the top border spacing and move the letters down 66 pixels */
+  margin-top: -1.575in; /* Remove the top border spacing and move the letters down 66 pixels */
   margin-left: -6px;
   /* margin-top: 50px; */
-  border-spacing: 48px 141px;
+  border-spacing: 48px 1.575in;
   border-collapse: separate;
   table-layout: fixed;
 }
