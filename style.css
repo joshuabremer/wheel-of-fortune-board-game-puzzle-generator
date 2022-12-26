@@ -1,0 +1,39 @@
+@media print {
+  @page {
+    size: landscape;
+  }
+}
+
+body {
+  font-size: 40px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+.cut-out-box {
+  width: 9.625in;
+  height: 7.25in;
+  border: 1px dashed black;
+}
+table {
+  margin-top: -57px;
+  margin-left: -6px;
+  /* margin-top: 50px; */
+  border-spacing: 46px 116px;
+  border-collapse: separate;
+
+  transform: scale(1.13);
+  transform-origin: top left;
+}
+tr.row-letters {
+  padding-bottom: 100px;
+}
+tr.row--letters td {
+  height: 50px;
+  border-bottom: 5px solid black;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+tr.row--letters td.unused {
+  border-bottom: 0;
+}
