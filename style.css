@@ -47,6 +47,7 @@ tr.row--letters td.unused {
 
 @media print {
   @page {
+    margin: 0cm !important;
     size: letter landscape;
   }
   form {
