@@ -3,7 +3,6 @@ body {
   font-weight: bold;
   width: 10in;
   height: 8in;
-  border: 1px solid black;
 }
 .cut-out-box {
   width: 9.625in;
@@ -46,10 +45,6 @@ tr.row--letters td.unused {
 @media print {
   @page {
     size: letter landscape;
-  }
-
-  body {
-    border: 0;
   }
   form {
     display: none;
