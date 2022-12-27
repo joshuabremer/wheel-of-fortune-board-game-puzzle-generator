@@ -6,7 +6,7 @@ body {
 }
 .cut-out-box {
   width: 9.625in;
-  height: 6.75in;
+  height: 7.25in;
   border: 1px dashed black;
   margin-bottom: 10px;
 }
@@ -14,7 +14,7 @@ form {
   padding-bottom: 10px;
 }
 table {
-  margin-top: -1.235in; /* Remove the top border spacing and move the letters down 66 pixels */
+  margin-top: -63px; /* Remove the top border spacing and move the letters down 66 pixels */
   margin-left: -6px;
   border-spacing: 49px 1.405in;
   border-collapse: separate;
@@ -47,7 +47,11 @@ tr.row--letters td.unused {
 
 @media print {
   @page {
+    margin: 0.25in 0.25in;
     size: letter landscape;
+  }
+  body {
+    margin: 0;
   }
   form {
     display: none;
