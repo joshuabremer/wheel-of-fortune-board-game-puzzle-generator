@@ -111,5 +111,5 @@ function init() {
     fillInEverything(inputElement.value);
   });
 
-  fillInEverything(inputElement.value);
+  fillInEverything(inputElement.value || "Wheel of Fortune Generator");
 }

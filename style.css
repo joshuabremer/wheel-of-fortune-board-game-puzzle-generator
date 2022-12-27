@@ -13,6 +13,10 @@ body {
 form {
   padding-bottom: 10px;
 }
+input[name="puzzle-input"] {
+  padding: 5px;
+  width: 100%;
+}
 table {
   margin-top: -63px; /* Remove the top border spacing and move the letters down 66 pixels */
   margin-left: -6px;
